@@ -21,7 +21,6 @@ const numberRandom = creaRandomNum(5, 1, 100);
 numberHtml.innerHTML += "I tuoi numeri da ricordare sono: " + numberRandom;
 let ArreynumRandom = [];
 ArreynumRandom.push(numberRandom);
-console.log(ArreynumRandom)
 
 //10 secondi durata numeri
 setTimeout(numRandomTime, 10000);
@@ -83,9 +82,20 @@ function numRandomTimeUser() {
         
         }
     }
-    console.log(numIndovinati)
-    console.log(numIndovinati.length)
+    
 
-    document.querySelector("h2").innerHTML= "Hai indovinato " + numIndovinati.length + " numeri. I numeri che hai indovinato sono: " + numIndovinati;
-}
+//risultato
+    if (numIndovinati.length < 1){
+
+        document.querySelector("h2").innerHTML= "Non hai indovianto nessun numero.";
+    
+    } else {
+    
+        document.querySelector("h2").innerHTML= "Hai indovinato " + numIndovinati.length + " numeri. I numeri che hai indovinato sono: " + numIndovinati;
+
+    }
+    
+}   
+
+
 
