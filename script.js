@@ -79,11 +79,13 @@ function numRandomTimeUser() {
         
             numIndovinati.push(numberRandom[i]);
         
-           
+            
         
         }
     }
     console.log(numIndovinati)
-    document.querySelector("h2").innerHTML= "I numeri che hai indovinato sono: " + numIndovinati;
+    console.log(numIndovinati.length)
+
+    document.querySelector("h2").innerHTML= "Hai indovinato " + numIndovinati.length + " numeri. I numeri che hai indovinato sono: " + numIndovinati;
 }
 
