@@ -30,6 +30,26 @@ function numRandomTime() {
     numberHtml.innerHTML = "";
 }
 
+//funzione per timer 30 sec
+let timeSec = 0;
+let timesecondi = 0;
+
+timer = setInterval(
+function time30Sec(){
+    if (timeSec >= 0 && timeSec < 39){
+        timeSec++;
+        if (timeSec > 9){
+            timesecondi++;
+            document.querySelector("h3").innerHTML= `Inserisci i numeri tra 30 secondi!   TIMER:  ${timesecondi}`;
+         } 
+    } else if (timeSec = 40){
+        clearInterval(timer);
+        document.querySelector("h3").innerHTML= "";
+
+    }
+    
+}, 1000);
+
 let numUtenteArray = [];
 
 setTimeout(numRandomTimeUser, 40000);
