@@ -14,11 +14,11 @@ function creaRandomNum(maxRange, min, max) {
 }
 
 
-const numberHtml = document.querySelector("h2");
+const numberHtml = document.querySelector("h1");
 
 //numeri
 const numberRandom = creaRandomNum(5, 1, 100);
-numberHtml.innerHTML += numberRandom;
+numberHtml.innerHTML += "I tuoi numeri da ricordare sono: " + numberRandom;
 let ArreynumRandom = [];
 ArreynumRandom.push(numberRandom);
 console.log(ArreynumRandom)
@@ -64,6 +64,6 @@ function numRandomTimeUser() {
         }
     }
     console.log(numIndovinati)
+    document.querySelector("h2").innerHTML= "I numeri che hai indovinato sono: " + numIndovinati;
 }
 
-debugger;
