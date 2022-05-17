@@ -34,17 +34,36 @@ let numUtenteArray = [];
 
 setTimeout(numRandomTimeUser, 20000);
 function numRandomTimeUser() {
-    let numeriUtente = prompt("Inserisci i 5 numeri visti");
+    let numeriUtenteUno = parseInt(prompt("Inserisci il primo numero"));
+    let numeriUtenteDue = parseInt(prompt("Inserisci il secondo numero"));
+    let numeriUtenteTre = parseInt(prompt("Inserisci il terzo numero"));
+    let numeriUtenteQuattro = parseInt(prompt("Inserisci il quarto numero"));
+    let numeriUtentecinque = parseInt(prompt("Inserisci il quinto numero"));
+    numUtenteArray.push(numeriUtenteUno);
+    numUtenteArray.push(numeriUtenteDue);
+    numUtenteArray.push(numeriUtenteTre);
+    numUtenteArray.push(numeriUtenteQuattro);
+    numUtenteArray.push(numeriUtentecinque);
 
-    console.log(numeriUtente);
-    numUtenteArray.push(numeriUtente);
+    
+
+   
     console.log(numUtenteArray);
+
+    let numIndovinati = [];
+
+    for (let i= 0; i<numberRandom.length; i++)  {
+    
+        if (numUtenteArray.includes(numberRandom[i])){
+            
+        
+            numIndovinati.push(numberRandom[i]);
+        
+           
+        
+        }
+    }
+    console.log(numIndovinati)
 }
 
 debugger;
-let numIndovinati = [];
-if (ArreynumRandom.includes(numUtenteArray)){
-    
-    numIndovinati.push(numUtenteArray);
-    console.log(numIndovinati)
-}
