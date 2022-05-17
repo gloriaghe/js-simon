@@ -87,7 +87,7 @@ function numRandomTimeUser() {
 //risultato
     if (numIndovinati.length < 1){
 
-        document.querySelector("h2").innerHTML= "Non hai indovianto nessun numero.";
+        document.querySelector("h2").innerHTML= "Non hai indovinato nessun numero.";
     
     } else {
     
