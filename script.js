@@ -32,7 +32,7 @@ function numRandomTime() {
 
 let numUtenteArray = [];
 
-setTimeout(numRandomTimeUser, 20000);
+setTimeout(numRandomTimeUser, 40000);
 function numRandomTimeUser() {
     let numeriUtenteUno = parseInt(prompt("Inserisci il primo numero"));
     let numeriUtenteDue = parseInt(prompt("Inserisci il secondo numero"));
